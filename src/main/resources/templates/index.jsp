@@ -30,6 +30,9 @@
 				<td>
 					<a th:href="@{/showFormForUpdate/{id}(id=${student.id})}">Edit</a>
 					<a th:href="@{/deleteStudent/{id}(id=${student.id})}">Delete</a>
+					<a th:href="@{/topStudents}">View Top 3 Students</a>
+
+
 				</td>
 			</tr>
 		</tbody>

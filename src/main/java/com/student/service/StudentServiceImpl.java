@@ -40,4 +40,11 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudentById(Integer id) {
         studentRepository.deleteById(id);
     }
+
+    @Override
+    public List<Student> getTopStudents() {
+        return studentRepository.findTopStudents();
+    }
+
+
 }

@@ -47,5 +47,19 @@ public class StudentController {
         studentService.deleteStudentById(id);
         return "redirect:/";
     }
+
+
+    @GetMapping("/topStudents")
+    public String viewTopStudents(Model model) {
+        model.addAttribute( "topStudents" ,studentService.getTopStudents());
+        return "top_students";
+
+    }
+
+
+
+
+
+
 }
 
